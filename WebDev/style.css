@@ -1,0 +1,80 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+/* Add or update the styles for the name container */
+.name-container {
+    display: flex;
+    gap: 10px; /* Adjust the gap between name and surname as needed */
+}
+
+/* Add or update the styles for the individual input fields */
+.name-container input {
+    width: 100%; /* Make the input fields take up all available width */
+}
+
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+input,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #216e25;
+}
+
+.red-button {
+    background-color: #fb1919;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.red-button:hover {
+    background-color: #af1616;
+}
+
+#map {
+    height: 500px;
+    margin-bottom: 20px;
+}
+
+
