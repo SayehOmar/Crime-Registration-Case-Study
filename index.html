@@ -71,27 +71,28 @@
         }
 
         function submitForm(event) {
-            event.preventDefault();
+        event.preventDefault();
 
-            // Fetch form data
-            var formData = new FormData(document.getElementById('crimeForm'));
+        // Fetch form data
+        var formData = new FormData(document.getElementById('crimeForm'));
 
-            // Submit the form data to Google Sheets
-            fetch('https://script.google.com/a/macros/etudiant-fst.utm.tn/s/AKfycbxvS6F7d3Djf9lq-KmqpShzrahPkOdxe58Rp2hzGJs64ojhiEZiOYztoY4C4GsqRSFD/exec', {
-                method: 'POST',
-                body: formData
-            })
-            .then(response => {
-                if (response.ok) {
-                    alert('Form submitted successfully!');
-                } else {
-                    alert('Error submitting form. Please try again later.');
-                }
-            })
-            .catch(error => {
-                console.error('Error:', error);
+        // Submit the form data to Google Sheets
+        fetch('AKfycbyYCT8XcI4cqHu31YjZy5RX68XmAL_SZZLgyrf0gkN_', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => {
+            if (response.ok) {
+                alert('Form submitted successfully!');
+            } else {
                 alert('Error submitting form. Please try again later.');
-            });
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('Error submitting form. Please try again later.');
+        });
+
         }
     </script>
     <script src="scription.js"></script>
