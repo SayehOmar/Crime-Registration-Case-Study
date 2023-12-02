@@ -66,7 +66,7 @@ fetch('http://localhost:3000/submit-form', {
   headers: {
     'Content-Type': 'application/json',
   },
-  body: JSON.stringify(formData),
+  body: JSON.stringify(formData)
 })
 .then(response => response.json())
 .then(data => {
@@ -80,7 +80,7 @@ fetch('http://localhost:3000/submit-form', {
 
 
 function submitToGoogleForm(formData) {
-    fetch('https://script.google.com/macros/s/AKfycbwaDecFm0gQl1_axFwsDOycZg6jLka3FI7tznv66Ls_gAV1dzCfx_j12pg1Oe5eGDmliw/exec', {
+    fetch('https://script.google.com/macros/s/AKfycbwbGklgosmM3ULQq8Ntf72rQyCGEZPrOtrFsU0ybXaYyRMvu0HQZS9Fzvpb8YZa32lhWQ/exec', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
