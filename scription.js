@@ -10,7 +10,7 @@ function validateForm() {
     // Get form elements
     var name = document.getElementById('name').value;
     var surname = document.getElementById('surname').value;
-    var dob = document.getElementById('dob').value; // Change the variable name to 'dob'
+    var dob = document.getElementById('dob').value;
     var gender = document.getElementById('gender').value;
     var occupation = document.getElementById('occupation').value;
     var latitude = document.getElementById('latitude').value;
@@ -61,22 +61,7 @@ function submitForm(event) {
     submitToGoogleForm(formData);
 }
 
-fetch('http://localhost:3000/submit-form', {
-  method: 'POST',
-  headers: {
-    'Content-Type': 'application/json',
-  },
-  body: JSON.stringify(formData)
-})
-.then(response => response.json())
-.then(data => {
-  console.log('Response Data:', data);
-  alert('Form submitted successfully!');
-})
-.catch(error => {
-  console.error('Error:', error);
-  alert('Error submitting form. Please try again later.');
-});
+
 
 
 function submitToGoogleForm(formData) {
