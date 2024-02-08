@@ -81,7 +81,7 @@ function submitToGoogleForm(formData) {
     })
     .catch(error => {
         console.error('Error:', error);
-        alert('Error submitting form. Please try again later8.');
+        alert('Error submitting form. Please try again later ! ');
     });
 }
 
