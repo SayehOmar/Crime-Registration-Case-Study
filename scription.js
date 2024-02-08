@@ -65,7 +65,7 @@ function submitForm(event) {
 
 
 function submitToGoogleForm(formData) {
-    fetch('https://script.google.com/macros/s/AKfycbwbGklgosmM3ULQq8Ntf72rQyCGEZPrOtrFsU0ybXaYyRMvu0HQZS9Fzvpb8YZa32lhWQ/exec', {
+    fetch('https://cors-anywhere.herokuapp.com/https://script.google.com/macros/s/AKfycbwbGklgosmM3ULQq8Ntf72rQyCGEZPrOtrFsU0ybXaYyRMvu0HQZS9Fzvpb8YZa32lhWQ/exec', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
